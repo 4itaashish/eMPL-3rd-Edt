@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - Fixtures</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 >eFootball<br>Manakamana Premiere League<br> 3rd EDITION. </h1 >
+    </header>
+    <nav>
+        <a href="#fixtures">Fixtures</a>
+        <a href="pointstable.html">Points Table</a>
+        <a href="register.html">Register</a>
+        <a href="rules.html">Rules</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="s1f.html">S1:AASHISH</option>
+                <option value="s2f.html">S2:BINAYA</option>
+                <option value="s3f.html">S3:ANISH</option>
+                <option value="s4f.html" selected>S4:AASHISH</option>
+                <option value="s5f.html">S5:AASHISH</option>
+                <option value="s6f.html">S6:BINAYA</option>
+                <option value="s7f.html">S7:AASHISH</option>
+                <option value="s8f.html">S8:BINAYA</option>
+                <option value="s9f.html">S9:ANJAN</option>
+                <option value="index.html">Current Season</option>
+            </select>
+        </div>
+        <section id="fixtures" class="matches">
+            <h2>FEBRUARY 6</h2>
+            <h2>QUALIFIER 1</h2>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>5 - 4</div>
+                <div>AASHISH</div>
+            </div>
+            <h2>ELIMINATOR</h2>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2 - 1</div>
+                <div>ANJAN VAI</div>
+            </div><h2>QUALIFIER 2</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>4 - 3</div>
+                <div>ASAL</div>
+            </div>
+           <h2>FEBRUARY 7</h2>
+            <h2>GRAND-FINAL</h2>
+            <div class="match">
+                <div>BINAYA</div>
+                <div>2 - 4</div>
+                <div>AASHISH</div>
+            </div>
+            
+            <h2>JANUARY 23</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>6-2</div>
+                <div>KHAIRE VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>6-2</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>2-0</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>3-5</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>PARU DAI</div>
+                <div>0-3</div>
+                <div>BINAYA</div>
+            </div>
+            
+            <h2>JANUARY 24</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>2-2</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-6</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>0-5</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>2-0</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>0-4</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>RAAJ</div>
+                <div>3-0</div>
+                <div>PARU DAI</div>
+            </div>
+            
+            <h2>JANUARY 25</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>4-1</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>2-2</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>-</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-3</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>RAAJ</div>
+                <div>2-3</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>3-5</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>2-6</div>
+                <div>THAKUR VAI</div>
+            </div>
+            
+            <h2>JANUARY 26</h2>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>1-2</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>6-3</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>2-4</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>1-2</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>4-1</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>1-1</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3-2</div>
+                <div>RAAJ</div>
+            </div>
+        
+            <h2>JANUARY 27</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>5-0</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-6</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-5</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-3</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>4-8</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>1-4</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>6-2</div>
+                <div>THAKUR VAI</div>
+            </div>
+            
+            <h2>JANUARY 28</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>1-2</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>3-2</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-0</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>1-2</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>3-0</div>
+                <div>PARU DAI</div>
+            </div>
+            
+            <h2>JANUARY 29</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>6-2</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>2-6</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-1</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>3-2</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>-</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>2-2</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>1-2</div>
+                <div>RAAJ</div>
+            </div>
+            
+            <h2>JANUARY 30</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3-0</div>
+                <div>KHAIRE VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>0-3</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>2-1</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>2-4</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>PARU DAI</div>
+                <div>1-3</div>
+                <div>BINAYA</div>
+            </div>
+        
+            <h2>JANUARY 31</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>1-2</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>1-5</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>0-2</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>3-3</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>4-6</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>RAAJ</div>
+                <div>1-2</div>
+                <div>PARU DAI</div>
+            </div>
+            
+            <h2>FEBRUARY 1</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3-1</div>
+                <div>ANISH</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>4-2</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-3</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>RAAJ</div>
+                <div>2-5</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>2-0</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>THAKUR VAI</div>
+            </div>
+            
+            <h2>FEBRUARY 2</h2>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>ASAL</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>1-4</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>3-4</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>1-5</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>1-2</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>THAKUR VAI</div>
+                <div>-</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>6-2</div>
+                <div>RAAJ</div>
+            </div>
+            
+            <h2>FEBRUARY 3</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>3-0</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>-</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>-</div>
+                <div>ANJAN VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>3-1</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>9-0</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>DEV AALU</div>
+                <div>1-4</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>4-1</div>
+                <div>THAKUR VAI</div>
+            </div>
+            
+            <h2>FEBRUARY 4</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>1-3</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>1-4</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>4-1</div>
+                <div>RAAJ</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>1-4</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>2-2</div>
+                <div>PARU DAI</div>
+            </div>
+            
+            <h2>FEBRUARY 5</h2>
+            <div class="match">
+                <div>AASHISH</div>
+                <div>0-1</div>
+                <div>DEV AALU</div>
+            </div>
+            <div class="match">
+                <div>KHAIRE VAI</div>
+                <div>0-3</div>
+                <div>BINAYA</div>
+            </div>
+            <div class="match">
+                <div>ASAL</div>
+                <div>2-3</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>-</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ANISH</div>
+                <div>-</div>
+                <div>PARU DAI</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>3-1</div>
+                <div>THAKUR VAI</div>
+            </div>
+            <div class="match">
+                <div>ANJAN VAI</div>
+                <div>3-3</div>
+                <div>RAAJ</div>
+            </div>
+            
+            
+
+        
+
+             
+                            
+        
+            
+
+                
+                
+                           
+            
+        </section>
+    </div>
+    <footer>
+        <h2 >Developed By<br>AASHISH POKHREL</h2 >
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball League - Points Table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* Highlight Top 4 Teams */
+        .top-four {
+            border-left: 5px solid rgb(82, 231, 89);
+            padding-left: 10px;
+        }
+        .btm-three {
+            border-left: 5px solid rgb(233, 10, 10);
+            padding-left: 10px;
+        }
+        .mid {
+            border-left: 5px solid rgb(253, 236, 47);
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>eFootball<br>Manakamana Premiere<br>League<br>3rd EDITION</h1>
+    </header>
+    <nav>
+        <a href="index.html">Fixtures</a>
+        <a href="#points-table">Points Table</a>
+        <a href="register.html">Register</a>
+        <a href="rules.html">Rules</a>
+    </nav>
+    <div class="content">
+        <div class="season-selector">
+            <label for="season">Select Season:</label>
+            <select id="season" onchange="changeSeason()">
+                <option value="s1p.html">S1:AASHISH</option>
+                <option value="s2p.html" selected>S2:BINAYA</option>
+                <option value="s2p.html">S3:ANISH</option>
+                <option value="s4p.html">S4:AASHISH</option>
+                <option value="s5p.html">S5:AASHISH</option>
+                <option value="s6p.html">S6:BINAYA</option>
+                <option value="s7p.html">S7:AASHISH</option>
+                <option value="s8p.html">S8:BINAYA</option>
+                <option value="s9p.html" >S9:ANJAN</option>
+                <option value="pointstable.html">Current Season</option>
+            </select>
+        </div>
+        <section id="points-table" class="standings">
+            <h2> MPL Standings</h2>
+            <table id="standings-table">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AASHISH</td>
+                        <td>15</td>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>69</td>
+                        <td>21</td>
+                        <td>48</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>ANISH</td>
+                        <td>16</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>47</td>
+                        <td>40</td>
+                        <td>7</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>ASAL</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>52</td>
+                        <td>40</td>
+                        <td>12</td>
+                        <td>25</td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>THAKUR VAI</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>14</td>
+                        <td>20</td>
+                        <td>-6</td>
+                        <td>7</td>
+                    </tr>
+                    -->
+                    <tr>
+                        <td>BINAYA</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>39</td>
+                        <td>21</td>
+                        <td>18</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>PARU DAI</td>
+                        <td>14</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>36</td>
+                        <td>20</td>8
+                        <td>16</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>AALU VAI</td>
+                        <td>15</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>42</td>
+                        <td>58</td>
+                        <td>-16</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>ROJAN VAI</td>
+                        <td>15</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>12</td>
+                        <td>19</td>
+                        <td>94</td>
+                        <td>-75</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>ANJAN VAI</td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>55</td>
+                        <td>35</td>
+                        <td>20</td>
+                        <td>29</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+     <div class="container">
+        <div class="first">
+            <input type="text" placeholder="AASHISH" class="first1" readonly><br>
+            <input type="text" placeholder="BINAYA" class="first2" readonly>
+        </div>
+        <div class="second">
+            <input type="text" placeholder="ANJAN VAI" class="second1" readonly><br>
+            <input type="text" placeholder="ANISH" class="second2" readonly>
+        </div>
+
+        <div class="third">
+            <input type="text" placeholder="BINAYA" class="third1" readonly><br>
+            <input type="text" placeholder="ANJAN VAI" class="third2" readonly>
+        </div>
+
+        <div class="fourth">
+            <input type="text" placeholder="AASHISH" class="fourth1" readonly><br>
+            <input type="text" placeholder="BINAYA" class="fourth2" readonly>
+            
+            <input type="text" placeholder="BINAYA" class="fifth" readonly>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const standingsTable = document.getElementById('standings-table').getElementsByTagName('tbody')[0];
+            const standings = Array.from(standingsTable.getElementsByTagName('tr'));
+
+            function getData(row) {
+                const cells = row.getElementsByTagName('td');
+                return {
+                    name: cells[0].innerText,
+                    mp: parseInt(cells[1].innerText) || 0,
+                    w: parseInt(cells[2].innerText) || 0,
+                    d: parseInt(cells[3].innerText) || 0,
+                    l: parseInt(cells[4].innerText) || 0,
+                    gf: parseInt(cells[5].innerText) || 0,
+                    ga: parseInt(cells[6].innerText) || 0,
+                    gd: parseInt(cells[7].innerText) || 0,
+                    pts: parseInt(cells[8].innerText) || 0
+                };
+            }
+
+            function sortStandings(standings) {
+                return standings.sort((a, b) => {
+                    const dataA = getData(a);
+                    const dataB = getData(b);
+
+                    if (dataA.pts !== dataB.pts) {
+                        return dataB.pts - dataA.pts;
+                    }
+                    if (dataA.gd !== dataB.gd) {
+                        return dataB.gd - dataA.gd;
+                    }
+                    return dataB.gf - dataA.gf;
+                });
+            }
+
+            function updateStandings() {
+                const sortedStandings = sortStandings(standings);
+                sortedStandings.forEach((row, index) => {
+                    row.classList.remove('top-four'); // Remove previous highlighting
+                    if (index < 4) {
+                        row.classList.add('top-four'); // Add blue line to the top 4 teams
+                    }else if(index > 4) {
+                        row.classList.add('btm-three');
+                    
+                    }else if(index > 3){
+                        row.classList.add('mid');
+                    }
+                    standingsTable.appendChild(row);
+                });
+            }
+
+            updateStandings();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
